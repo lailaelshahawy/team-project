@@ -24,7 +24,6 @@ This contract sets out shared expectations and commitments for how our team will
 
 * Respectful and inclusive behavior are necessary for smooth and productive communication. In our team, we expect each other to actively listen to ideas, consistently include our teammates and be inviting of their ideas, and constructively criticize the idea and not the person.
 
----
 
 ### Attendance and Participation
 
@@ -32,7 +31,6 @@ This contract sets out shared expectations and commitments for how our team will
   
 * Team members should notify other teammates if they think they will not be able to meet an internal deadline set, if they are going to miss a lecture, or if they are going to miss a tutorial.
 
----
 
 ### Work Quality
   
