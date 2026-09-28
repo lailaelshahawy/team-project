@@ -18,37 +18,49 @@ This contract sets out shared expectations and commitments for how our team will
 
 ### Communication
 
-* Which platform will you use for communication outside of class, when required for work on your course project? (Examples: Text message, Discord, WeChat, etc.)
+* We will use text messages as our primary communication channel.
 
-* Each teammate agrees to respond to messages in at most how long? 1 day? 2 days? Some other amount of time? 
+* Team members will respond to messages within 6 hours on weekdays and weekends 
 
-* What things should a teammate notify you about? (Examples: if they think they won't be able to meet a deadline, if they have to miss lecture, etc.)
+* Team members should notify other teammates if they think they will not be able to meet an internal deadline set, if they are going to miss a lecture, or if they are going to miss a tutorial.
 
-* Respectful and inclusive behaviour are necessary for smooth and productive communication. What are some respectful and inclusive behaviours you expect when communicating with each other during lectures, labs, or outside of class? (Examples: Actively listening to each team members ideas, giving everyone a chance to meaningfully contribute, etc.)
+* Respectful and inclusive behavior are necessary for smooth and productive communication. In our team, we expect each other to actively listen to ideas, consistently include our teammates and be inviting of their ideas, and constructively criticize the idea and not the person.
 
 ---
 
-### [Other Categories of norms and expectations go here]
+### Additional team norms and expectations
 
-* Based on your previous teamwork experiences, what other behaviours do you agree upon as a team?
-    - some examples of possible additional team norms and expectations are included in the sample team contract in case your team needs some help getting ideas for what else you want to include.
+* Each team member contributes equally to discussions, ideas, and work.
+  
+* All deliverables will be completed on time, tested, and up to our set standard.
+  
+* Each pull request will be reviewed by at least 2 people.
+  
 
 ---
 
 ## Decision Making
 
-* How will decisions about your team project be made? (Examples: By majority vote, by unanimous vote, etc.)
+* Decisions will be made by consensus. If this is not possible, the decision will be taken based on majority vote. 
 
 ---
 ## Conflict resolution
 
-* How will your team resolve conflicts? (Example: by listening to each other's side of the issue and attempting to reach a compromise. By consulting a TA or instructor as a team, if a resolution has not yet been reached.)
+* Our team will resolve conflicts by consulting each other privately and coming to a unanimous decision by discussing each person's side and critiquing each idea constructively and professionally. If we are unable to make a private unanimous conflict resolution, we will then contact our TA.
 
 ---
 
 ## Accountability
 
-* Reliability and accountability are also important aspects of teamwork. What are the responsibilities of each team member? (Example: completing their share of the work in a timely manner, seeking assistance from teammates/TAs/instructors when required, etc.)
+Our responsibilities are as follows:
+
+* All members agree to provide fair and honest peer evaluations
+  
+* All members ask for help from other teammates and TAs if needed
+  
+* All members complete each of their designated tasks in a timely manner within the agreed internal deadlines.
+  
+* All members complete work to a high standard.
 
 ---
 
@@ -58,4 +70,4 @@ By signing below, we acknowledge that we have read, discussed, and agreed to the
 
 Team Member Signatures:
 
-(type names here)
+LAILA ELSHAHAWY
