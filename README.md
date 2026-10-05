@@ -12,7 +12,8 @@ By keeping this README up-to-date,
 your team will find it easier to prepare for the final presentation
 at the end of the term.
 
-User Stories: Recipe Organizer
+
+# User Stories: Recipe Organizer
 1. As a user, I want to be able to add and delete new recipes.
 2. As a user, I want to be able to sort recipes by name, ingredients, and date listed.
 3. As a user, I would like to search recipes by name, ingredients, date, and keywords in instructions.
