@@ -1,4 +1,4 @@
-package use_case.logout;
+package login_use_case.logout;
 
 /**
  * Input Boundary for the logout use case.

@@ -1,4 +1,4 @@
-package interface_adapter;
+package login_interface_adapter;
 
 import java.util.ArrayList;
 import java.util.List;

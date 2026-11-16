@@ -1,4 +1,4 @@
-package interface_adapter;
+package login_interface_adapter;
 
 public interface ViewManagerModelListener {
 

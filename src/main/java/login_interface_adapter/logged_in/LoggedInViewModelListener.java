@@ -1,4 +1,4 @@
-package interface_adapter.logged_in;
+package login_interface_adapter.logged_in;
 
 public interface LoggedInViewModelListener {
 

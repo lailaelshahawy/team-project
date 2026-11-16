@@ -1,8 +1,8 @@
-package view;
+package login_view;
 
-import interface_adapter.ViewManagerModel;
+import login_interface_adapter.ViewManagerModel;
 
-import interface_adapter.ViewManagerModelListener;
+import login_interface_adapter.ViewManagerModelListener;
 import javax.swing.*;
 import java.awt.*;
 

@@ -1,4 +1,4 @@
-package use_case.signup;
+package login_use_case.signup;
 
 /**
  * Input Boundary for actions which are related to signing up.

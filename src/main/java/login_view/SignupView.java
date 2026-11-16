@@ -1,10 +1,10 @@
-package view;
+package login_view;
 
-import interface_adapter.signup.SignupController;
-import interface_adapter.signup.SignupState;
-import interface_adapter.signup.SignupViewModel;
+import login_interface_adapter.signup.SignupController;
+import login_interface_adapter.signup.SignupState;
+import login_interface_adapter.signup.SignupViewModel;
 
-import interface_adapter.signup.SignupViewModelListener;
+import login_interface_adapter.signup.SignupViewModelListener;
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;

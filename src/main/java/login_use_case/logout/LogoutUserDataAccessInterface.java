@@ -1,4 +1,4 @@
-package use_case.logout;
+package login_use_case.logout;
 
 /**
  * DAO interface for the Logout Use Case.

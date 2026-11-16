@@ -1,12 +1,12 @@
-package use_case.signup;
+package login_use_case.signup;
 
-import entity.User;
-import entity.UserFactory;
+import login_entity.User;
+import login_entity.UserFactory;
 
 /**
  * The Signup Interactor.
  */
-public class SignupInteractor implements SignupInputBoundary {
+public class SignupInteractor implements login_use_case.signup.SignupInputBoundary {
     private final SignupUserDataAccessInterface userDataAccessObject;
     private final SignupOutputBoundary userPresenter;
     private final UserFactory userFactory;

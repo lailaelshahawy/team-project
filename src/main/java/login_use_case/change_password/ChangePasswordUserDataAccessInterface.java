@@ -1,6 +1,6 @@
-package use_case.change_password;
+package login_use_case.change_password;
 
-import entity.User;
+import login_entity.User;
 
 /**
  * The DAO interface for the Change Password Use Case.
