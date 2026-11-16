@@ -40,17 +40,24 @@ As a player, I want to create and securely access my account so that my game res
 
 
 ## Use cases:
-Use Case 1: Play Memory Challenge
+Trivia Challenge — Laila
+- Start Trivia Quiz
+- Submit Trivia Answer
+- Review Trivia Results
 
-Use Case 2: Play Trivia Challenge
+Memory Challenge — Alsade
+- Start Memory Game
+- Flip Memory Card
 
-Use Case 3: View Player Progress
+Progress Tracking — Angela
+- View Game History
+- View Personal Bests
 
-Use Case 4: Register Player Account
+Player Authentication — Fatma
+- Register Player Account
+- Log In
+- Log Out
 
-Use Case 5: Log in
-
-Use Case 6: Log Out
 
 ## Minimum Viable Product
 
