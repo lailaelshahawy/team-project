@@ -46,8 +46,51 @@ Trivia Challenge — Laila
 - Review Trivia Results
 
 Memory Challenge — Alsade
-- Start Memory Game
-- Flip Memory Card
+(1) Select a memory game difficulty 
+(2) Play game on relevant board by flipping cards
+
+# Use Case 1: Select a Memory Game Difficulty
+Primary actor: Player
+Preconditions: Player has opened the memory game and is on the game setup screen.
+Trigger: Player chooses to start a new game.
+Success outcome: The selected difficulty is saved, and the player is presented with the corresponding game board.
+
+Main success scenario:
+Player selects the option to start a new game.
+System displays the available difficulty levels: Easy, Medium and Hard.
+Player selects a difficulty level.
+System configures the game board according to the selected difficulty.
+System displays the game board with all cards face-down.
+Player is ready to begin playing.
+
+Extensions:
+2a. Player decides not to start a game. System returns to the main menu.
+3a. Player does not select a difficulty. System prompts the player to select one before proceeding.
+
+
+# Use Case 2: Play a Memory Game
+Primary actor: Player
+Preconditions: Player has selected a difficulty level, and the corresponding game board has been generated with all cards face-down.
+Trigger: Player selects a card on the game board.
+Success outcome: All matching pairs have been identified, the game is completed, and the player's performance data is displayed.
+
+Main success scenario:
+Player selects a face-down card.
+System reveals the selected card.
+Player selects a second face-down card.
+System reveals the second card.
+System checks whether the two revealed cards match.
+If the cards match, the system keeps both cards face-up and updates the player's score.
+Player continues selecting pairs of cards until all matching pairs have been identified.
+System detects that all pairs have been matched and ends the game.
+System displays player performance result. 
+
+Extensions:
+
+1a. Player selects a card that has already been matched or is currently face-up. System ignores the selection.
+3a. Player attempts to select a third card while two unmatched cards are being displayed. System prevents the selection until the two cards are turned face-down.
+6a. If the cards do not match, the system displays both cards temporarily before turning them face-down again and updates the number of mistakes made. 
+7a. Player attempts to select another card before the unmatched cards are turned face-down. System prevents the selection.
 
 Progress Tracking — Angela
 - View Game History
@@ -64,7 +107,7 @@ Player Authentication — Fatma
 | Team member | Use case | Minimum functionality |
 | :--- | :---: | ---: |
 | Laila | Play Trivia challenge | Player selects a category and difficulty, answers 10 API-based multiple choice questions, and receives a final score with answer review|
-| Alsade | Play Memory challenge | XXX |
+| Alsade | Play Memory challenge | Player can play an easy card matching game on a 3x4 grid and receives a final score with whether they won or lost|
 | Fatma | User authentication | XXX |
 | Angela | Progress tracking | XXX |
 The MVP will be a Java Swing applications that allows users to register and log in, play a card-matching memory game, API-based trivia quiz game, and view their saved game results. Each team member will use clean architecture to implement the use case they are leading.
