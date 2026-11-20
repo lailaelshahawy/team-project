@@ -35,7 +35,6 @@ As a player, I want to complete a ten-question trivia quiz in a category and dif
 As a player, I want to view my past game results, personal bests, and achievements so that I can monitor my progress over time.
 
 ### User Story 4: Player Authentication
-
 As a player, I want to create and securely access my account so that my game results and progress remain associated with my profile across sessions.
 
 
@@ -106,7 +105,7 @@ Extensions:
 | :--- | :---: | ---: |
 | Laila | Play Trivia challenge | Player selects a category and difficulty, answers 10 API-based multiple choice questions, and receives a final score with answer review|
 | Alsade | Play Memory challenge | Player can play an easy card matching game on a 3x4 grid and receives a final score with whether they won or lost|
-| Fatma | User authentication | XXX |
+| Fatma | Player authentication | Player signs in into the app, player's username and password saved for future login, and user be able to logout anytime with automatic saving |
 | Angela | Progress tracking | XXX |
 The MVP will be a Java Swing applications that allows users to register and log in, play a card-matching memory game, API-based trivia quiz game, and view their saved game results. Each team member will use clean architecture to implement the use case they are leading.
 
