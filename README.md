@@ -46,8 +46,8 @@ As a player, I want to create and securely access my account so that my game res
 - Review Trivia Results
 
 ### Memory Challenge — Alsade
-(1) Select a memory game difficulty 
-(2) Play game on relevant board by flipping cards
+1. Select a memory game difficulty 
+2. Play game on relevant board by flipping cards
 
 #### Use Case 1: Select a Memory Game Difficulty
 Primary actor: Player
