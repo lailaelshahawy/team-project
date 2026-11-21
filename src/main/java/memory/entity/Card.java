@@ -8,15 +8,17 @@ public class Card {
     private final int pairId;
     private boolean faceUp;
     private boolean matched;
+    private String imagePath;
 
     /**
      * Creates a new card with a given pair ID. By default cards are face down (faceUp = false)
      * @param pairId which is an ID representing the pair a card belongs to
      */
-    public Card(int pairId){
+    public Card(int pairId, String imagePath){
         this.pairId = pairId;
         this.faceUp = false;
         this.matched = false;
+        this.imagePath = imagePath;
     }
 
     /**
@@ -56,7 +58,14 @@ public class Card {
      */
     public boolean checkMatch(Card card){
         return this.pairId == card.pairId;
-        }
+    }
+
+    /**
+     * A getter for the image path associated with each card. Cards of the same pair have the same image path
+     */
+    public String getImagePath(){
+        return imagePath;
+    }
 }
 
 
