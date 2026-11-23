@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f3cdb17-65c6-4115-879a-d927d9b20b87" name="Changes" comment="update the files for user authentication use case">
-      <change beforePath="$PROJECT_DIR$/src/main/java/login_view/LoggedInView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/login_view/LoggedInView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/login_interface_adapter/logout/LogoutPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/login_interface_adapter/logout/LogoutPresenter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
