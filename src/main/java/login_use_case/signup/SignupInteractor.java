@@ -33,6 +33,12 @@ public class SignupInteractor implements login_use_case.signup.SignupInputBounda
         else if ("".equals(signupInputData.getUsername())) {
             userPresenter.prepareFailView("Username cannot be empty");
         }
+        else if (signupInputData.getUsername().contains(",")) {
+            userPresenter.prepareFailView("Username cannot contain comma");
+        }
+        else if (signupInputData.getPassword().contains(",")) {
+            userPresenter.prepareFailView("Password cannot contain comma");
+        }
         else {
             final User user = userFactory.create(signupInputData.getUsername(),
                                                  signupInputData.getPassword());

@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f3cdb17-65c6-4115-879a-d927d9b20b87" name="Changes" comment="update the files for user authentication use case">
-      <change beforePath="$PROJECT_DIR$/src/main/java/login_interface_adapter/logout/LogoutPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/login_interface_adapter/logout/LogoutPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/login_entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/login_entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/login_use_case/login/LoginInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/login_use_case/login/LoginInteractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/login_use_case/signup/SignupInteractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/login_use_case/signup/SignupInteractor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="login-interface" />
+        <entry key="$PROJECT_DIR$" value="implement-logout" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,12 +36,22 @@
     &quot;assignee&quot;: &quot;Fatma055&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/lailaelshahawy/team-project.git&quot;,
-    &quot;accountId&quot;: &quot;47371644-f6c1-49ce-80de-137bcefa097a&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/lailaelshahawy/team-project.git",
+    "accountId": "47371644-f6c1-49ce-80de-137bcefa097a"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "lailaelshahawy",
+    "repository": "team-project"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -59,7 +72,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "implement-logout",
+    "git-widget-placeholder": "fix-username-comma-bug",
     "git.auto.fetch.suggestion.counter": "1",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/FatamahAlzahra/IdeaProjects/team-project/src/main/java",
