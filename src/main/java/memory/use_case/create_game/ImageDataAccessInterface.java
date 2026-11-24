@@ -1,4 +1,4 @@
-package memory.use_case.play_game;
+package memory.use_case.create_game;
 
 import java.util.List;
 
@@ -8,9 +8,12 @@ import java.util.List;
 public interface ImageDataAccessInterface {
     /**
      * Returns the paths of all available card images
+     *
      * @return a list of strings of card image paths
      */
-    List<String> getImages();
+    static List<String> getImages() {
+        return null;
+    }
 
     /**
      * Returns the image for the back of the card

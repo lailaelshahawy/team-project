@@ -15,11 +15,13 @@ public class MemoryGame {
      * Creates a new memory game with an auto-generated id and given difficulty;
      * @param difficulty the game difficulty
      */
-    public MemoryGame(Difficulty difficulty) {
-        this.difficulty = difficulty;
+    public MemoryGame(Difficulty difficulty, Board board) {
         this.gameId = UUID.randomUUID().toString();
+        this.difficulty = difficulty;
+        /*
+        Score begins at 5 and reduces each time a mistake is made
+         */
         this.score = 5;
-        this.board = new Board(difficulty.getRows(),
-                difficulty.getColumns());
+        this.board = board;
     }
 }

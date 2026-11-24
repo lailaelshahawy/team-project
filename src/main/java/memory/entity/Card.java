@@ -13,8 +13,12 @@ public class Card {
     /**
      * Creates a new card with a given pair ID. By default cards are face down (faceUp = false)
      * @param pairId which is an ID representing the pair a card belongs to
+     * @throws IllegalArgumentException if the paidID is a negative number
      */
     public Card(int pairId, String imagePath){
+        if (pairId < 0 || pairId % 1 != 0){
+            throw new IllegalArgumentException("Pair ID must be positive integer");
+        }
         this.pairId = pairId;
         this.faceUp = false;
         this.matched = false;
