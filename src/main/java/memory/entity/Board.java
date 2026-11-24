@@ -1,7 +1,6 @@
 package memory.entity;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -12,7 +11,7 @@ import java.util.List;
 public class Board {
     private final int rows;
     private final int columns;
-    private final List<List<Integer>> cardsLayout;
+    private final List<List<Card>> cardsLayout;
 
     /**
      * Creates a new board with the given dimensions.
@@ -22,49 +21,42 @@ public class Board {
      * @throws IllegalArgumentException if dimensions are non-positive
      * or the total number of cards is odd
      */
-    public Board(int rows, int columns) {
+    public Board(int rows, int columns, List<Card> cards) {
         if (rows <= 0 || columns <= 0) {
-            throw new IllegalArgumentException("Number of rows and columns must be positive");
+            throw new IllegalArgumentException(
+                    "Number of rows and columns must be positive"
+            );
         }
-        if (rows * columns % 2 != 0){
-            throw new IllegalArgumentException("There must be an even number of cards");
+        if (rows * columns != cards.size()) {
+            throw new IllegalArgumentException(
+                    "Number of cards must match board dimensions"
+            );
         }
+
         this.rows = rows;
         this.columns = columns;
-        this.cardsLayout = createBoard();
+        this.cardsLayout = createBoard(cards);
+
     }
-
     /**
-     * Helper function for creating a unique game board of cards for matching based on a specified number of rows and
-     * columns.
+     * Helper function for positioning cards from a list on the board.
      */
-    private List<List<Integer>> createBoard(){
-        final int totalCards = rows * columns;
-        final int totalPairs = totalCards/2;
-        final List<Integer> cardPairIds = new ArrayList<>();
-
-        // This loop generates numbers representing card pair Ids and adds them to cardPairIds
-        for (int i = 1; i <= totalPairs; i++){
-            cardPairIds.add(i);
-            cardPairIds.add(i);
-        }
-
-        // Shuffle the card ids so that each newly created board is different
-        Collections.shuffle(cardPairIds);
+    private List<List<Card>> createBoard(List<Card> cards) {
 
         // Create the outer board so that inner rows can be added to it
-        final List<List<Integer>> gridLayout = new ArrayList<>();
+        final List<List<Card>> gridLayout = new ArrayList<>();
 
-        for (int i = 0; i < rows; i++){
-            List<Integer> newRow = new ArrayList<>();
+        for (int i = 0; i < rows; i++) {
+            List<Card> newRow = new ArrayList<>();
 
-            // Adds an id to a cell in the grid. i * columns + j calculates the index of the id for each cell.
+            // Add a card to each cell in the grid
             for (int j = 0; j < columns; j++) {
-                newRow.add(cardPairIds.get(i * columns + j));
+                newRow.add(cards.get(i * columns + j));
             }
 
             gridLayout.add(newRow);
         }
+
         return gridLayout;
     }
 
@@ -74,7 +66,7 @@ public class Board {
      *
      * @return the 2D list representing the board layout
      */
-    public List<List<Integer>> getLayout(){
+    public List<List<Card>> getLayout(){
         return cardsLayout;
     }
 }

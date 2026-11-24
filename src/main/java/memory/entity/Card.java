@@ -8,7 +8,7 @@ public class Card {
     private final int pairId;
     private boolean faceUp;
     private boolean matched;
-    private String imagePath;
+    private final String imagePath;
 
     /**
      * Creates a new card with a given pair ID. By default cards are face down (faceUp = false)
