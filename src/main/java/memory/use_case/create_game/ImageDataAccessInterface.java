@@ -11,7 +11,7 @@ public interface ImageDataAccessInterface {
      *
      * @return a list of strings of card image paths
      */
-    static List<String> getImages() {
+    default List<String> getImages() {
         return null;
     }
 
