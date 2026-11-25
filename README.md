@@ -32,7 +32,7 @@ As a player, I want to flip cards to find matching pairs at different difficulty
 As a player, I want to complete a ten-question trivia quiz in a category and difficulty level of my choice so that I can test my knowledge, receive a final score, and review my answers after the quiz.
 
 ### User Story 3: Progress Tracking
-As a player, I want to view my past game results, personal bests, and achievements so that I can monitor my progress over time.
+As a player, I want to memory.view my past game results, personal bests, and achievements so that I can monitor my progress over time.
 
 ### User Story 4: Player Authentication
 
@@ -108,7 +108,7 @@ Extensions:
 | Alsade | Play Memory challenge | Player can play an easy card matching game on a 3x4 grid and receives a final score with whether they won or lost|
 | Fatma | User authentication | XXX |
 | Angela | Progress tracking | XXX |
-The MVP will be a Java Swing applications that allows users to register and log in, play a card-matching memory game, API-based trivia quiz game, and view their saved game results. Each team member will use clean architecture to implement the use case they are leading.
+The MVP will be a Java Swing applications that allows users to register and log in, play a card-matching memory game, API-based trivia quiz game, and memory.view their saved game results. Each team member will use clean architecture to implement the use case they are leading.
 
 
 ## Entities
