@@ -1,5 +1,7 @@
 package memory.entity;
 
+import javax.swing.*;
+import java.awt.*;
 import java.util.UUID;
 
 /**
@@ -23,5 +25,17 @@ public class MemoryGame {
          */
         this.score = 5;
         this.board = board;
+    }
+
+    public int getScore() {
+        return this.score;
+    }
+
+    public Board getBoard() {
+        return this.board;
+    }
+
+    public Difficulty getDifficulty() {
+        return this.difficulty;
     }
 }

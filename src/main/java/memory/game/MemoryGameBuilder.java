@@ -7,57 +7,71 @@ import memory.interface_adapter.create_game.CreateGameController;
 import memory.interface_adapter.create_game.CreateGamePresenter;
 import memory.interface_adapter.create_game.CreateGameViewModel;
 import memory.use_case.create_game.CreateGameInteractor;
+import memory.interface_adapter.memory_game.MemoryGameViewModel;
 import memory.view.CreateGameView;
+import memory.view.MemoryGameView;
 
 import javax.swing.JFrame;
 
 public class MemoryGameBuilder {
 
     private static final String CREATE_GAME_VIEW = "CREATE_GAME";
+    private static final String MEMORY_GAME_VIEW = "MEMORY_GAME";
 
     public JFrame build() {
 
-        // 1. Create the ViewModel.
+        // Create the ViewModel.
         CreateGameViewModel createGameViewModel =
                 new CreateGameViewModel();
 
-        // 2. Create the Presenter.
-        CreateGamePresenter createGamePresenter =
-                new CreateGamePresenter(createGameViewModel);
+        // Create the MemoryGameViewModel.
+        MemoryGameViewModel memoryGameViewModel = new MemoryGameViewModel();
 
-        // 3. Create the Data Access Object.
+        // Create the viewManagerModel.
+        ViewManagerModel viewManagerModel = new ViewManagerModel();
+        ViewManager viewManager = new ViewManager(viewManagerModel);
+
+        // Create the Presenter.
+        CreateGamePresenter createGamePresenter =
+                new CreateGamePresenter(createGameViewModel, memoryGameViewModel, viewManagerModel);
+
+        // Create the Data Access Object.
         ImageDataAccessObject imageDataAccessObject =
                 new ImageDataAccessObject();
 
-        // 4. Create the Interactor.
+        // Create the Interactor.
         CreateGameInteractor createGameInteractor =
                 new CreateGameInteractor(
                         createGamePresenter,
                         imageDataAccessObject
                 );
 
-        // 5. Create the Controller.
+        // Create the Controller.
         CreateGameController createGameController =
                 new CreateGameController(createGameInteractor);
 
-        // 6. Create the View.
+        // Create the Create Game View.
         CreateGameView createGameView =
                 new CreateGameView(
                         createGameController,
                         createGameViewModel
                 );
-
-        // 7. Create the View Manager.
-        ViewManagerModel viewManagerModel = new ViewManagerModel();
-        ViewManager viewManager = new ViewManager(viewManagerModel);
+        // Create the Memory Game View.
+        MemoryGameView memoryGameView =
+                new MemoryGameView(
+                        memoryGameViewModel
+                );
 
         // Register the Create Game screen.
         viewManager.addView(CREATE_GAME_VIEW, createGameView);
 
+        // Register the Memory Game Screen.
+        viewManager.addView(MEMORY_GAME_VIEW, memoryGameView);
+
         // Display the initial screen.
         viewManagerModel.setState(CREATE_GAME_VIEW);
 
-        // 8. Create the application window.
+        // Create the application window.
         JFrame frame = new JFrame("Memory Game");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setContentPane(viewManager);

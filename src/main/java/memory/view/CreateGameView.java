@@ -105,8 +105,6 @@ public class CreateGameView extends JPanel implements CreateGameViewModelListene
     public void createGameViewModelChanged() {
         errorMessageLabel.setText(createGameViewModel.getErrorMessage());
 
-        if (createGameViewModel.getMemoryGame() != null) {
             // Navigate to MemoryGameView here later.
         }
     }
-}
