@@ -4,26 +4,33 @@ import entity.TriviaQuestion;
 import entity.TriviaSession;
 
 public class StartTriviaQuizInteractor implements StartTriviaQuizInputBoundary {
-    private final StartTriviaQuizDataAccessInterface dataAccess;
+    private final StartTriviaQuizDataAccessInterface questionDataAccess;
+    private final StartTriviaQuizSessionDataAccessInterface sessionDataAccess;
     private final StartTriviaQuizOutputBoundary presenter;
-    private TriviaSession activeSession;
 
-    public StartTriviaQuizInteractor(StartTriviaQuizDataAccessInterface dataAccess,
-                                    StartTriviaQuizOutputBoundary presenter) {
-        this.dataAccess = dataAccess;
+    public StartTriviaQuizInteractor(StartTriviaQuizDataAccessInterface questionDataAccess,
+                                     StartTriviaQuizSessionDataAccessInterface sessionDataAccess,
+                                     StartTriviaQuizOutputBoundary presenter) {
+        this.questionDataAccess = questionDataAccess;
+        this.sessionDataAccess = sessionDataAccess;
         this.presenter = presenter;
     }
 
     @Override
     public void execute(StartTriviaQuizInputData input) {
+        TriviaSession session;
         try {
-            activeSession = new TriviaSession(dataAccess.fetchQuestions(
+            session = new TriviaSession(questionDataAccess.fetchQuestions(
                     input.getCategory(), input.getDifficulty()));
         } catch (IllegalStateException | IllegalArgumentException ex) {
             presenter.prepareFailView(ex.getMessage());
             return;
         }
-        TriviaQuestion first = activeSession.getFirstQuestion();
-        presenter.prepareSuccessView(new StartTriviaQuizOutputData(first.getQuestionText(), first.getOptions()));
+        sessionDataAccess.saveSession(session);
+
+        TriviaQuestion first = session.getCurrentQuestion();
+        presenter.prepareSuccessView(new StartTriviaQuizOutputData(
+                session.getAnsweredCount() + 1, TriviaSession.QUESTION_COUNT,
+                first.getQuestionText(), first.getOptions()));
     }
 }
